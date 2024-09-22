@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>House Zone</title>
+    <!-- Google Font CDN -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+    <!-- DaisyUI CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+        .font-lexend {
+            /* font-family: 'Poppins', sans-serif; */
+            /* font-family: "Manrope", sans-serif; */
+            font-family: "Lexend", sans-serif;
+
+        }
+    </style>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                        'bike-primary': '#E76F51',
+                        'bike-primary-bg': 'rgba(231, 111, 81, 0.1)',
+                    },
+                },
+            },
+        }
+    </script>
+</head>
+
+<!--  border-2 border-red-600 -->
+
+<body class="font-lexend">
+
+        <nav class="bg-[#F9F7F3] sticky">
+            <div class="w-[80%] mx-auto flex flex-col justify-center items-center lg:flex lg:flex-row lg:justify-between pb-[70px] pt-[30px]">
+                <button class="font-bold text-2xl px-[20px] py-[12px] bg-[#B4F461] rounded-xl">Blog</button>
+                <div class="flex justify-center items-center font-bold text-2xl space-x-[20px]">
+                    <img src="assets/logo.png" alt="">
+                    <p>Donate Bangladesh</p>
+                </div>
+                <button class="flex justify-center items-center font-bold text-2xl space-x-[10px] text-[#565654]">
+                    <img src="assets/coin.png" alt="">
+                    <p><span>5000</span> BDT</p>
+                    
+                </button>
+            </div>
+            <div class="flex justify-center items-center space-x-[20px] bg-[white] pt-[80px]">
+                <button class="font-bold text-2xl px-[20px] py-[12px] bg-[#B4F461] rounded-xl">Donation</button>
+                <button class="font-bold text-2xl px-[20px] py-[12px]  border-2 border-[#B7B7B7] rounded-xl">History</button>
+            </div>
+        </nav>
+    
+
+
+</body>
+
+</html>
