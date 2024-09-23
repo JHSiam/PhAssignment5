@@ -1,3 +1,6 @@
+
+//Donation function added
+
 document.getElementById('don-btn-noakhali').addEventListener('click', function(){
     donMoney=getValueById('inp-don-noakhali');
     pevMoney=getInnerTextById('tot-don-noakhali');
@@ -20,9 +23,25 @@ document.getElementById('don-btn-noakhali').addEventListener('click', function()
     setInnerTextById('ac-balance', remMoney);
 
 
-})
+    //adding history
 
+    const div = document.createElement('div');
+    const currentDate = new Date().toString();
 
+    div.innerHTML=`
+        <div class="p-[32px] border-2 border-[#B7B7B7] rounded-xl mb-[20px]">
+                <h2 class="font-bold text-2xl">${donMoney} Taka is Donate for Flood at Noakhali, Bangladesh</h2><br>
+                <p>Date: ${currentDate}</p>
+
+            </div>
+    `
+
+    document.getElementById('hist-main-page').appendChild(div);
+        
+    //addind popup modal
+    const modal = document.getElementById('donationModal');
+    modal.classList.remove('hidden');
+});
 
 document.getElementById('don-btn-feni').addEventListener('click', function(){
     donMoney=getValueById('inp-don-feni');
@@ -44,6 +63,25 @@ document.getElementById('don-btn-feni').addEventListener('click', function(){
     const remMoney = parseFloat(accountBalance)-parseFloat(donMoney);
     setInnerTextById('tot-don-feni',totMoney);
     setInnerTextById('ac-balance', remMoney);
+
+    //adding history
+
+    const div = document.createElement('div');
+    const currentDate = new Date().toString();
+
+    div.innerHTML=`
+        <div class="p-[32px] border-2 border-[#B7B7B7] rounded-xl mb-[20px]">
+                <h2 class="font-bold text-2xl">${donMoney} Taka is Donate for Flood Relief in Feni,Bangladesh</h2><br>
+                <p>Date: ${currentDate}</p>
+
+            </div>
+    `
+
+    document.getElementById('hist-main-page').appendChild(div);
+        
+    //addind popup modal
+    const modal = document.getElementById('donationModal');
+    modal.classList.remove('hidden');
 
 
 })
@@ -71,4 +109,58 @@ document.getElementById('don-btn-pro').addEventListener('click', function(){
     setInnerTextById('ac-balance', remMoney);
 
 
+    //adding history
+
+    const div = document.createElement('div');
+    const currentDate = new Date().toString();
+
+    div.innerHTML=`
+        <div class="p-[32px] border-2 border-[#B7B7B7] rounded-xl mb-[20px]">
+                <h2 class="font-bold text-2xl">${donMoney} Taka is Donated for Aid for Injured in the Quota Movement, Bangladesh</h2><br>
+                <p>Date: ${currentDate}</p>
+
+            </div>
+    `
+
+    document.getElementById('hist-main-page').appendChild(div);
+        
+    //addind popup modal
+    const modal = document.getElementById('donationModal');
+    modal.classList.remove('hidden');
+
+
 })
+
+
+// modal closing
+document.getElementById('closeModal').addEventListener('click', function() {
+    const modal = document.getElementById('donationModal');
+    modal.classList.add('hidden');
+
+
+})
+
+
+
+//Donation and History btn function
+
+document.getElementById('don-btn').addEventListener('click', function(){
+    const donMainPage= document.getElementById('don-main-page');
+    const histPage = document.getElementById('hist-main-page');
+    donMainPage.classList.remove('hidden');
+    histPage.classList.add('hidden');
+    
+})
+
+
+document.getElementById('hist-btn').addEventListener('click', function(){
+    const donMainPage= document.getElementById('don-main-page');
+    const histPage = document.getElementById('hist-main-page');
+    donMainPage.classList.add('hidden');
+    histPage.classList.remove('hidden');
+    
+})
+
+
+
+
