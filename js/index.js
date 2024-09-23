@@ -145,6 +145,19 @@ document.getElementById('closeModal').addEventListener('click', function() {
 //Donation and History btn function
 
 document.getElementById('don-btn').addEventListener('click', function(){
+
+    document.getElementById('don-btn').classList.add('bg-[#B4F461]')
+    document.getElementById('don-btn').classList.remove('border-2')
+    document.getElementById('don-btn').classList.remove('border-[#B7B7B7]')
+
+    document.getElementById('hist-btn').classList.remove('bg-[#B4F461]')
+    document.getElementById('hist-btn').classList.add('border-2')
+    document.getElementById('hist-btn').classList.add('border-[#B7B7B7]')
+
+    
+
+    
+
     const donMainPage= document.getElementById('don-main-page');
     const histPage = document.getElementById('hist-main-page');
     donMainPage.classList.remove('hidden');
@@ -154,12 +167,30 @@ document.getElementById('don-btn').addEventListener('click', function(){
 
 
 document.getElementById('hist-btn').addEventListener('click', function(){
+
+    document.getElementById('don-btn').classList.remove('bg-[#B4F461]')
+    document.getElementById('don-btn').classList.add('border-2')
+    document.getElementById('don-btn').classList.add('border-[#B7B7B7]')
+
+
+    document.getElementById('hist-btn').classList.add('bg-[#B4F461]')
+    document.getElementById('hist-btn').classList.remove('border-2')
+    document.getElementById('hist-btn').classList.remove('border-[#B7B7B7]')
+
     const donMainPage= document.getElementById('don-main-page');
     const histPage = document.getElementById('hist-main-page');
     donMainPage.classList.add('hidden');
     histPage.classList.remove('hidden');
     
 })
+
+
+//Blog btn
+
+document.getElementById('blog-btn').addEventListener('click', function(){
+    window.location.href = 'blog.html';
+})
+
 
 
 
