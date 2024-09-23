@@ -6,6 +6,10 @@ document.getElementById('don-btn-noakhali').addEventListener('click', function()
     pevMoney=getInnerTextById('tot-don-noakhali');
     accountBalance=getInnerTextById('ac-balance');
 
+    if (donMoney === "") {
+        alert('Donation amount cannot be empty');
+        return;
+    }
 
     if(isNaN(donMoney) || parseFloat(donMoney)<0){
         alert('Failed to donate');
@@ -48,6 +52,10 @@ document.getElementById('don-btn-feni').addEventListener('click', function(){
     pevMoney=getInnerTextById('tot-don-feni');
     accountBalance=getInnerTextById('ac-balance');
 
+    if (donMoney === "") {
+        alert('Donation amount cannot be empty');
+        return;
+    }
 
     if(isNaN(donMoney) || parseFloat(donMoney)<0){
         alert('Failed to donate');
@@ -91,6 +99,11 @@ document.getElementById('don-btn-pro').addEventListener('click', function(){
     donMoney=getValueById('inp-don-pro');
     pevMoney=getInnerTextById('tot-don-pro');
     accountBalance=getInnerTextById('ac-balance');
+
+    if (donMoney === "") {
+        alert('Donation amount cannot be empty');
+        return;
+    }
 
 
     if(isNaN(donMoney) || parseFloat(donMoney)<0){
