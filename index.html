@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>House Zone</title>
+    <title>Donation</title>
     <!-- Google Font CDN -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -50,7 +50,7 @@
             </div>
             <button class="flex justify-center items-center font-bold text-2xl space-x-[10px] text-[#565654]">
                 <img src="assets/coin.png" alt="">
-                <p><span>5000</span> BDT</p>
+                <p><span id="ac-balance">5500</span> BDT</p>
 
             </button>
         </div>
@@ -68,7 +68,7 @@
                 <div class="flex flex-col justify-between">
                     <div class="flex font-bold text-2xl space-x-[10px] text-[#565654] bg-[#F3F3F3] w-[200px] rounded-xl py-[16px] justify-center">
                         <img src="assets/coin.png" alt="">
-                        <p><span>0</span> BDT</p>
+                        <p><span id="tot-don-noakhali">0</span> BDT</p>
 
                     </div>
                     <h2 class="font-bold text-3xl">Donate for Flood at Noakhali, Bangladesh</h2>
@@ -77,9 +77,9 @@
                         contribution, big or small, makes difference. Please join us in supporting the relief efforts
                         and making a positive impact on the lives of those in need.</p>
 
-                      <input type="text" placeholder="Write Donation Amount" class="p-[18px] border-2 border-[#B7B7B7] rounded-xl"> 
+                      <input id="inp-don-noakhali" type="text" placeholder="Write Donation Amount" class="p-[18px] border-2 border-[#B7B7B7] rounded-xl"> 
 
-                      <button class="font-bold text-2xl px-[20px] py-[12px] bg-[#B4F461] rounded-xl">Donate Now</button>
+                      <button id="don-btn-noakhali" class="font-bold text-2xl px-[20px] py-[12px] bg-[#B4F461] rounded-xl">Donate Now</button>
                        
                 </div>
             </div>
@@ -91,7 +91,7 @@
             <div class="flex flex-col justify-between">
                 <div class="flex font-bold text-2xl space-x-[10px] text-[#565654] bg-[#F3F3F3] w-[200px] rounded-xl py-[16px] justify-center">
                     <img src="assets/coin.png" alt="">
-                    <p><span>0</span> BDT</p>
+                    <p><span id="tot-don-feni">600</span> BDT</p>
 
                 </div>
                 <h2 class="font-bold text-3xl">Donate for Flood at Noakhali, Bangladesh</h2>
@@ -100,9 +100,9 @@
                     contribution, big or small, makes difference. Please join us in supporting the relief efforts
                     and making a positive impact on the lives of those in need.</p>
 
-                  <input type="text" placeholder="Write Donation Amount" class="p-[18px] border-2 border-[#B7B7B7] rounded-xl"> 
+                  <input id="inp-don-feni" type="text" placeholder="Write Donation Amount" class="p-[18px] border-2 border-[#B7B7B7] rounded-xl"> 
 
-                  <button class="font-bold text-2xl px-[20px] py-[12px] bg-[#B4F461] rounded-xl">Donate Now</button>
+                  <button id="don-btn-feni" class="font-bold text-2xl px-[20px] py-[12px] bg-[#B4F461] rounded-xl">Donate Now</button>
                    
             </div>
         </div>
@@ -114,7 +114,7 @@
             <div class="flex flex-col justify-between">
                 <div class="flex font-bold text-2xl space-x-[10px] text-[#565654] bg-[#F3F3F3] w-[200px] rounded-xl py-[16px] justify-center">
                     <img src="assets/coin.png" alt="">
-                    <p><span>0</span> BDT</p>
+                    <p><span id="tot-don-pro">2400</span> BDT</p>
 
                 </div>
                 <h2 class="font-bold text-3xl">Donate for Flood at Noakhali, Bangladesh</h2>
@@ -123,9 +123,9 @@
                     contribution, big or small, makes difference. Please join us in supporting the relief efforts
                     and making a positive impact on the lives of those in need.</p>
 
-                  <input type="text" placeholder="Write Donation Amount" class="p-[18px] border-2 border-[#B7B7B7] rounded-xl"> 
+                  <input id="inp-don-pro" type="text" placeholder="Write Donation Amount" class="p-[18px] border-2 border-[#B7B7B7] rounded-xl"> 
 
-                  <button class="font-bold text-2xl px-[20px] py-[12px] bg-[#B4F461] rounded-xl">Donate Now</button>
+                  <button id="don-btn-pro" class="font-bold text-2xl px-[20px] py-[12px] bg-[#B4F461] rounded-xl">Donate Now</button>
                    
             </div>
         </div>
@@ -136,6 +136,13 @@
     </footer>
 
 
+    <script src="js/index.js"></script>
+    <script src="js/library.js"></script>
+
+
 </body>
+
+
+
 
 </html>
