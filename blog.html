@@ -44,7 +44,7 @@
         <div
             class="w-[80%] mx-auto flex flex-col justify-center items-center lg:flex lg:flex-row lg:justify-between pb-[70px] pt-[30px]">
             <button id="home-btn" class="font-bold text-2xl px-[20px] py-[12px] bg-[#B4F461] rounded-xl">Home</button>
-            <div class="flex justify-center items-center font-bold text-2xl space-x-[20px]">
+            <div class="flex justify-center items-center font-bold text-xl space-x-[20px] lg:text-2xl">
                 <img src="assets/logo.png" alt="">
                 <p>Donate Bangladesh</p>
             </div>
@@ -57,6 +57,8 @@
     </nav>
 
     <section class="w-[80%] mx-auto mt-[50px]">
+
+        <h1 class="font-bold text-3xl mb-[30px]">Frequiently Asked Question?</h1>
 
         <div class="collapse collapse-arrow bg-base-200">
             <input type="radio" name="my-accordion-2" checked="checked" />
@@ -76,29 +78,31 @@
                 </p>
             </div>
 
+        </div>
 
-            <div class="collapse collapse-arrow bg-base-200 mt-[30px]">
-                <input type="radio" name="my-accordion-2" />
-                <div class="collapse-title text-xl font-medium">What is event delegation in the context of the DOM, and
-                    why is it useful?</div>
-                <div class="collapse-content">
-                    <p>Event delegation is a technique where a single event listener is attached to a parent element
-                        rather than each individual child element.</p>
-                </div>
+
+        <div class="collapse collapse-arrow bg-base-200 mt-[30px]">
+            <input type="radio" name="my-accordion-2" />
+            <div class="collapse-title text-xl font-medium">What is event delegation in the context of the DOM, and
+                why is it useful?</div>
+            <div class="collapse-content">
+                <p>Event delegation is a technique where a single event listener is attached to a parent element
+                    rather than each individual child element.</p>
             </div>
+        </div>
 
 
 
-            <div class="collapse collapse-arrow bg-base-200 mt-[30px]">
-                <input type="radio" name="my-accordion-2" />
-                <div class="collapse-title text-xl font-medium">How do you manipulate an element's attributes and styles
-                    using the DOM?</div>
-                <div class="collapse-content">
-                    <p>You can manipulate inline styles using element.style.property = 'value';.
-                        You can also add or remove CSS classes with element.classList.add('class') and
-                        element.classList.remove('class').</p>
-                </div>
+        <div class="collapse collapse-arrow bg-base-200 mt-[30px]">
+            <input type="radio" name="my-accordion-2" />
+            <div class="collapse-title text-xl font-medium">How do you manipulate an element's attributes and styles
+                using the DOM?</div>
+            <div class="collapse-content">
+                <p>You can manipulate inline styles using element.style.property = 'value';.
+                    You can also add or remove CSS classes with element.classList.add('class') and
+                    element.classList.remove('class').</p>
             </div>
+        </div>
 
 
     </section>

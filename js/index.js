@@ -2,7 +2,7 @@
 //Donation function added
 
 document.getElementById('don-btn-noakhali').addEventListener('click', function(){
-    donMoney=getValueById('inp-don-noakhali');
+    donMoney=getValueById('inp-don-noakhali').trim();
     pevMoney=getInnerTextById('tot-don-noakhali');
     accountBalance=getInnerTextById('ac-balance');
 
@@ -48,7 +48,7 @@ document.getElementById('don-btn-noakhali').addEventListener('click', function()
 });
 
 document.getElementById('don-btn-feni').addEventListener('click', function(){
-    donMoney=getValueById('inp-don-feni');
+    donMoney=getValueById('inp-don-feni').trim();
     pevMoney=getInnerTextById('tot-don-feni');
     accountBalance=getInnerTextById('ac-balance');
 
@@ -96,7 +96,7 @@ document.getElementById('don-btn-feni').addEventListener('click', function(){
 
 
 document.getElementById('don-btn-pro').addEventListener('click', function(){
-    donMoney=getValueById('inp-don-pro');
+    donMoney=getValueById('inp-don-pro').trim();
     pevMoney=getInnerTextById('tot-don-pro');
     accountBalance=getInnerTextById('ac-balance');
 
